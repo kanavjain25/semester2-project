@@ -25,16 +25,16 @@
         <div class="filters-card">
             <div class="filters-card-child"></div>
             <div class="subscriber-count">
-                <img class="sub-slider-icon" alt="" src="public/sub-slider.svg" />
+                <!-- <img class="sub-slider-icon" alt="" src="public/sub-slider.svg" /> -->
                 <div class="subscriber-count1">Subscriber Count</div>
                 <br>
                 <div class="slidecontainer">
-                    
-                    <input type="range" min="1" max="100" value="50">
-                    
+
+                    <input type="range" min="1" max="10000" value="1">
+
                     <!-- <p>Custom range slider:</p>
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
-                  </div>
+                </div>
             </div>
             <div class="keywords">
                 <input class="keyword-box" type="text" placeholder="Specific niche in mind?" />
@@ -56,12 +56,12 @@
         <div class="search-bar">
             <input class="search-bar-child" type="text" placeholder="Search" size="100px">
             <!-- <img class="icon-search" alt="" src="public/-icon-search.svg" /> -->
-            
+
         </div>
 
 
 
-        
+
         <div class="user-id">
             <!-- <div class="kimaya-a">Kimaya A.</div>
             <button>
@@ -69,53 +69,59 @@
             <button>
                 <img class="icon-suitcase" alt="" src="public/-icon-suitcase.svg" />
             </button> -->
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 0px;">Login</button>
+            <button onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto; margin-right: 0px;">Login</button>
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+            <div id="id01" class="modal">
 
-    <div class="container" style="font-size: 40px;">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required style="font-size: x-large;">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required style="font-size: x-large;">
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+                    <div class="container" style="font-size: 40px;">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required
+                            style="font-size: x-large;">
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required
+                            style="font-size: x-large;">
 
-<script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>   
-            
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
         </div>
-        
+
         <div class="influencer-card-1">
             <div class="influencer-card-1-child"></div>
-            <img class="influencer-card-1-item" alt="" style="border-radius: 20px;" src="https://yt3.googleusercontent.com/xGH1BCpEHp4V0hRXEpKUbudZy2zxon3z7JnnAXngiW-8374wuiFolwYf6wmgVbKr-_RmqBHJrA=s176-c-k-c0x00ffffff-no-rj" />
+            <img class="influencer-card-1-item" alt="" style="border-radius: 20px;"
+                src="https://yt3.googleusercontent.com/xGH1BCpEHp4V0hRXEpKUbudZy2zxon3z7JnnAXngiW-8374wuiFolwYf6wmgVbKr-_RmqBHJrA=s176-c-k-c0x00ffffff-no-rj" />
             <div class="subscribers">Subscribers</div>
             <div class="tag">
                 <div class="marketing">Marketing</div>
@@ -137,7 +143,8 @@
         </div>
         <div class="rectangle-parent">
             <div class="frame-child"></div>
-            <img class="frame-item" alt="" style="border-radius: 20px;" src="https://avatars.githubusercontent.com/u/42698533?v=4" />
+            <img class="frame-item" alt="" style="border-radius: 20px;"
+                src="https://avatars.githubusercontent.com/u/42698533?v=4" />
             <div class="subscribers1">Subscribers</div>
             <div class="tag3">
                 <div class="marketing">Coding</div>
@@ -164,7 +171,9 @@
         </div>
         <div class="rectangle-group">
             <div class="frame-inner"></div>
-            <img class="ellipse-icon" alt="" src="public/ellipse-7@2x.png" />
+            <img class="ellipse-icon" alt="" style="border-radius:20px;"
+                src="https://yt3.googleusercontent.com/oVSuJbeBX7sTZz3CuQNRO5Gm-sZsBxp6sGMF5e8WjVjJdUiUMOFRzfVLMyRtHru_ysUEiEhDHqY=s176-c-k-c0x00ffffff-no-rj" />
+
             <div class="subscribers2">Subscribers</div>
             <div class="tag8">
                 <div class="marketing">Philosophy</div>
@@ -179,13 +188,14 @@
                 <div class="see-more-button-child"></div>
                 <div class="see-more1">See More</div>
             </div>
-            <div class="shwetabh-gangwar">Shwetabh Gangwar</div>
-            <div class="shwetabhgangwar1">@ShwetabhGangwar1</div>
+            <div class="shwetabh-gangwar"><br>Shwetabh Gangwar</div>
+            <div class="shwetabhgangwar1"><br>@ShwetabhGangwar1</div>
             <b class="m">1.4M</b>
         </div>
         <div class="rectangle-container">
             <div class="frame-inner"></div>
-            <img class="ellipse-icon" alt="" src="public/ellipse-7@2x.png" />
+            <img class="ellipse-icon" alt="" style="border-radius:20px;"
+                src="https://yt3.googleusercontent.com/oVSuJbeBX7sTZz3CuQNRO5Gm-sZsBxp6sGMF5e8WjVjJdUiUMOFRzfVLMyRtHru_ysUEiEhDHqY=s176-c-k-c0x00ffffff-no-rj" />
             <div class="subscribers2">Subscribers</div>
             <div class="tag8">
                 <div class="marketing">Philosophy</div>
@@ -200,13 +210,14 @@
                 <div class="see-more-button-child"></div>
                 <div class="see-more1">See More</div>
             </div>
-            <div class="shwetabh-gangwar">Shwetabh Gangwar</div>
-            <div class="shwetabhgangwar1">@ShwetabhGangwar1</div>
+            <div class="shwetabh-gangwar"><br>Shwetabh Gangwar</div>
+            <div class="shwetabhgangwar1"><br>@ShwetabhGangwar1</div>
             <b class="m">1.4M</b>
         </div>
         <div class="frame-div">
             <div class="frame-child"></div>
-            <img class="frame-item" alt="" src="public/ellipse-6@2x.png" />
+            <img class="frame-item" alt="" style="border-radius: 20px;"
+                src="https://avatars.githubusercontent.com/u/42698533?v=4" />
             <div class="subscribers1">Subscribers</div>
             <div class="tag3">
                 <div class="marketing">Coding</div>
@@ -227,13 +238,14 @@
                 <div class="see-more-button-child"></div>
                 <div class="see-more1">See More</div>
             </div>
-            <div class="kunal-kushwaha">Kunal Kushwaha</div>
-            <div class="kunalkushwaha">@KunalKushwaha</div>
+            <div class="kunal-kushwaha"><br>Kunal Kushwaha</div>
+            <div class="kunalkushwaha"><br>@KunalKushwaha</div>
             <b class="k1">371K</b>
         </div>
         <div class="rectangle-parent1">
             <div class="frame-inner"></div>
-            <img class="ellipse-icon" alt="" src="public/ellipse-7@2x.png" />
+            <img class="ellipse-icon" alt="" style="border-radius:20px;"
+                src="https://yt3.googleusercontent.com/oVSuJbeBX7sTZz3CuQNRO5Gm-sZsBxp6sGMF5e8WjVjJdUiUMOFRzfVLMyRtHru_ysUEiEhDHqY=s176-c-k-c0x00ffffff-no-rj" />
             <div class="subscribers2">Subscribers</div>
             <div class="tag8">
                 <div class="marketing">Philosophy</div>
@@ -248,13 +260,14 @@
                 <div class="see-more-button-child"></div>
                 <div class="see-more1">See More</div>
             </div>
-            <div class="shwetabh-gangwar">Shwetabh Gangwar</div>
-            <div class="shwetabhgangwar1">@ShwetabhGangwar1</div>
+            <div class="shwetabh-gangwar"><br>Shwetabh Gangwar</div>
+            <div class="shwetabhgangwar1"><br>@ShwetabhGangwar1</div>
             <b class="m">1.4M</b>
         </div>
         <div class="influencer-card-11">
             <div class="influencer-card-1-child"></div>
-            <img class="influencer-card-1-item" alt="" src="public/ellipse-8@2x.png" />
+            <img class="influencer-card-1-item" alt="" style="border-radius: 20px;"
+                src="https://yt3.googleusercontent.com/xGH1BCpEHp4V0hRXEpKUbudZy2zxon3z7JnnAXngiW-8374wuiFolwYf6wmgVbKr-_RmqBHJrA=s176-c-k-c0x00ffffff-no-rj" />
             <div class="subscribers">Subscribers</div>
             <div class="tag">
                 <div class="marketing">Marketing</div>
@@ -270,20 +283,30 @@
             <div class="see-more-button">
                 <div class="marketing">See More</div>
             </div>
-            <div class="alex-hormozi">Alex Hormozi</div>
-            <div class="alexhormozi">@AlexHormozi</div>
+            <div class="alex-hormozi"><br>Alex Hormozi</div>
+            <div class="alexhormozi"><br>@AlexHormozi</div>
             <b class="k">939k</b>
         </div>
         <nav class="navigation">
             <div class="navigation-child"></div>
             <button class="icon-home">
-                <img class="vector-icon" alt="" /><img class="group-icon" alt=""
-                    src="public/group.svg" /></button><button class="icon-light-bulb">
-                <img class="vector-icon1" alt="" src="public/vector.svg" /></button><button class="icon-box">
-                <img class="vector-icon2" alt="" src="public/vector1.svg" /></button><button class="icon-people-team">
-                <img class="group-icon1" alt="" src="public/group1.svg" /></button><button class="icon-market-stall">
-                <img class="group-icon2" alt="" src="public/group2.svg" />
+                <img class="group-icon" alt=""
+                    src="./resources/white icon/home.png" /></button>
+            <button class="icon-light-bulb">
+                <img class="vector-icon1" alt=""
+                    src="./resources/white icon/bulb.png" /></button><button
+                class="icon-box">
+                <img class="vector-icon2" alt=""
+                    src="./resources/white icon/box.png" /></button>
+            <button class="icon-people-team">
+                <img class="group-icon1" alt=""
+                    src="./resources/white icon/ppl.png" />
             </button>
+            <button class="icon-market-stall">
+                <img class="group-icon2" alt=""
+                    src="./resources/white icon/house.png" />
+            </button>
+            <!-- <div class="navigation-child2"></div> -->
         </nav>
     </div>
 </body>
