@@ -621,6 +621,16 @@ body {
   top: 61%;
   right: 46.81%;
   left: 33.26%;
+  
+}
+.navigation {
+  position: fixed;
+  top: 12px;
+  left: 10px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); */
+  width: 9.8%;
+
+  height: 68.5%;
 }
 .navigation-child {
   position: absolute;
@@ -628,7 +638,7 @@ body {
   left: 0;
   border-radius: 55px;
   background-color:black;
-  width: 95px;
+  width: 100%;
   height:140.5%;
 }
 .navigation-child2 {
@@ -661,8 +671,8 @@ body {
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 162px;
-  left: 32px;
+  top: 20%;
+  left: 25%;
   width: 31.89px;
   height: 31.96px;
 }
@@ -673,8 +683,8 @@ body {
   height: 29.96px;
 }
 .vector-icon1 {
-  top: 0;
-  left: 0;
+  top: 20%;
+  left: 25%;
 }
 .icon-light-bulb {
   cursor: pointer;
@@ -734,15 +744,7 @@ body {
   top: 273.96px;
   left: 33px;
 }
-.navigation {
-  position: fixed;
-  top: 12px;
-  left: 10px;
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); */
-  width: 95px;
 
-  height: 68.5%;
-}
 .desktop-1 {
   position: relative;
   border-radius: 40px;
@@ -755,6 +757,7 @@ body {
   font-size: var(--font-size-base);
   color: var(--color-black);
   font-family: var(--font-poppins);
+  top:-20px;
 }
 /*slider bar=====================================*/
 .slidecontainer {
@@ -790,4 +793,64 @@ body {
   height: 25px;
   background: #04AA6D;
   cursor: pointer;
+}
+/*navbar===========================/*/
+.container1 {
+  height: 100vh;
+  width:95%;
+  position: fixed;
+}
+
+.side-nav,
+.nav-menu {
+  height: 100%;
+}
+.side-nav .nav-menu {
+  list-style: none;
+  padding: 40px 0;
+  width: 10%;
+  top:0;
+  background-color: #000000;
+}
+.side-nav .nav-item {
+  position: relative;
+  padding: 10px 20px;
+}
+.nav-item.active {
+  background-color: #fff;
+  box-shadow: 0px -3px rgba(0, 0, 0, 0.2), 0px 3px rgba(0, 0, 0, 0.2);
+}
+.nav-item.active a {
+  color: #000000;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-text {
+  left: -20%;
+  margin-right: 4px;
+  font-size: 1rem;
+}
+.side-nav .nav-item.active::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+.side-nav .nav-item.active::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -20px 0 0 #fff;
 }
