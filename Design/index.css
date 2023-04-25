@@ -797,7 +797,7 @@ body {
 /*navbar===========================/*/
 .container1 {
   height: 100vh;
-  width:95%;
+  width:10%;
   position: fixed;
 }
 
@@ -808,7 +808,7 @@ body {
 .side-nav .nav-menu {
   list-style: none;
   padding: 40px 0;
-  width: 10%;
+  /* width: 10%; */
   top:0;
   background-color: #000000;
 }
