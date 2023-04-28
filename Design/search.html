@@ -54,11 +54,19 @@
             </div>
             <b class="filters">Filters</b>
         </div>
-        <!-- <div class="search-bar">
-            <input class="search-bar-child" type="text" placeholder="Search" size="100px">
-            <img class="icon-search" alt="" src="public/-icon-search.svg" />
+        <div class="search-bar">
 
-        </div> -->
+            
+            <input class="search-bar-child" type="text" placeholder="Kunal Kushwaha" size="100px">
+            <!-- <img class="icon-search" alt="" src="public/-icon-search.svg" /> -->
+
+
+            <input type="text" id="wage" value ="" size=20>
+        <a href="search.html"><button id="sub">Submit</button></a>
+
+        
+
+        </div>
 
 
 
@@ -70,12 +78,14 @@
             <button>
                 <img class="icon-suitcase" alt="" src="public/-icon-suitcase.svg" />
             </button> -->
+<!--             
+            <a href="user.html">
             <button onclick="document.getElementById('id01').style.display='block'"
-            style="width:auto; margin-right: 0px;">Login</button>
-
+                style="width:auto; margin-right: 0px;">Login</button></a> -->
+                <h4>Hello User<h4>
             <div id="id01" class="modal">
 
-                <form class="modal-content animate" action="./user.html" >
+                <form class="modal-content animate" action="/action_page.php" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close"
                             title="Close Modal">&times;</span>
@@ -92,7 +102,9 @@
                             style="font-size: x-large;">
 
                         <button type="submit">Login</button>
-                        
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
                     </div>
 
                     <div class="container" style="background-color:#f1f1f1">
@@ -278,17 +290,18 @@
         </div>
     
       
-        <div class="container1">
-            <nav class="side-nav">
-              <ul class="nav-menu">
-                <li class="nav-item"><a href="user.html"><i class="fas fa-tachometer-alt"></i><span class="menu-text">Dashboard</span></a></li>
-                <!-- <li class="nav-item"><a href="copy.html"><i class="fas fa-user"></i><span class="menu-text">Users</span></a></li> -->
-                <!-- <li class="nav-item active"><a href="#"><i class="fas fa-file-alt"></i><span class="menu-text">Posts</span></a></li> -->
-                <li class="nav-item"><a href="#"><i class="fas fa-play "></i><span class="menu-text">Media</span></a></li>
-                <li class="nav-item"><a href="index.html"><i class="fas fa-sign-out-alt"></i><span class="menu-text">exit</span></a></li>
-              </ul>
-            </nav>
-          </div>
+      <div class="container1">
+        <nav class="side-nav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="user.html"><i class="fas fa-tachometer-alt"></i><span class="menu-text">Dashboard</span></a></li>
+            <!-- <li class="nav-item"><a href="copy.html"><i class="fas fa-user"></i><span class="menu-text">Users</span></a></li> -->
+            <!-- <li class="nav-item active"><a href="#"><i class="fas fa-file-alt"></i><span class="menu-text">Posts</span></a></li> -->
+            <li class="nav-item"><a href="#"><i class="fas fa-play "></i><span class="menu-text">Media</span></a></li>
+            <li class="nav-item"><a href="index.html"><i class="fas fa-sign-out-alt"></i><span class="menu-text">exit</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      
       
 </div>
 <script src="./app.js"></script>
