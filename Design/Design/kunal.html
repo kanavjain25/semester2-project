@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+</head>
+
+<body>
+
+    <div class="desktop-1">
+
+        <div class="filters-card">
+            <div class="filters-card-child"></div>
+            <div class="subscriber-count">
+                <!-- <img class="sub-slider-icon" alt="" src="public/sub-slider.svg" /> -->
+                <div class="subscriber-count1">Subscriber Count</div>
+                <br>
+                <div class="slidecontainer">
+
+                    <input type="range" min="1" max="10000" value="1">
+
+                    <!-- <p>Custom range slider:</p>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
+                </div>
+            </div>
+            <div class="keywords">
+                <input class="keyword-box" type="text" placeholder="Specific niche in mind?" />
+                <!-- <div class="specific-niche-in">Specific niche in mind?</div> -->
+                <div class="keywords1">Keywords</div>
+            </div>
+            <div class="location">
+                <input class="keyword-box" type="text" placeholder="Enter location" />
+                <div class="keywords1">Location</div>
+            </div>
+            <div class="language">
+                <input class="keyword-box" type="text" placeholder="Content Language" />
+                <div class="keywords1">Language</div>
+            </div>
+            <b class="filters">Filters</b>
+        </div>
+        <div class="search-bar">
+
+
+            <input class="search-bar-child" type="text" placeholder="Kunal Kushwaha" size="100px">
+
+
+
+            <input type="text" id="wage" value="" size=20>
+            <a href="search.html"><button id="sub">Submit</button></a>
+
+
+
+        </div>
+
+
+
+
+        <div class="user-id">
+            <h4>Hello User<h4>
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container" style="font-size: 40px;">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required
+                                    style="font-size: x-large;">
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required
+                                    style="font-size: x-large;">
+
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+        </div>
+        <!-- <div class="new-fame">
+            <div class="new-frame-child"></div>
+            <img class="new-img" style="border-radius: 20px;"
+                src="https://avatars.githubusercontent.com/u/42698533?v=4" />
+        </div> -->
+
+         <div class="frame-div"style="top:8.5%; right:26%">
+            <div class="frame-child"><div class="kunal-info">Kunal Kushwaha is an Indian educator and YouTuber who specializes in teaching computer science and programming.
+                He runs a popular YouTube channel called "Code With Harry" which has over 2 million subscribers.
+                Kunal Kushwaha has expertise in various programming languages including C, C++, Python, Java, and JavaScript.
+                He also provides online courses and tutorials on his website, where students can get access to his lectures and learn at their convenience.
+                Kunal Kushwaha has helped thousands of students all over the world to learn and excel in programming and computer science.
+        </div></div>
+            <img class="frame-item" alt="" style="border-radius: 20px;"
+                src="https://avatars.githubusercontent.com/u/42698533?v=4" />
+
+            <div class="kunal-kushwaha"><br>Kunal Kushwaha</div>
+            <div class="kunalkushwaha"><br>@KunalKushwaha</div>
+            <!-- <div class="kunal-info">Kunal Kushwaha is an Indian educator and YouTuber who specializes in teaching computer science and programming.
+                He runs a popular YouTube channel called "Code With Harry" which has over 2 million subscribers.
+                Kunal Kushwaha has expertise in various programming languages including C, C++, Python, Java, and JavaScript.
+                He also provides online courses and tutorials on his website, where students can get access to his lectures and learn at their convenience.
+                Kunal Kushwaha has helped thousands of students all over the world to learn and excel in programming and computer science.
+        </div> -->
+        </div>
+
+
+        <div class="container1">
+            <nav class="side-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="user.html"><i class="fas fa-tachometer-alt"></i><span
+                                class="menu-text">Dashboard</span></a></li>
+                    <!-- <li class="nav-item"><a href="copy.html"><i class="fas fa-user"></i><span class="menu-text">Users</span></a></li> -->
+                    <!-- <li class="nav-item active"><a href="#"><i class="fas fa-file-alt"></i><span class="menu-text">Posts</span></a></li> -->
+                    <li class="nav-item"><a href="#"><i class="fas fa-play "></i><span
+                                class="menu-text">Media</span></a></li>
+                    <li class="nav-item"><a href="index.html"><i class="fas fa-sign-out-alt"></i><span
+                                class="menu-text">exit</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
