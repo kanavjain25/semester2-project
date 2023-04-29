@@ -577,15 +577,19 @@ body {
   left: 76.53%;
   overflow: hidden;
 }
-.frame-div,
+/* .frame-div,
 .rectangle-group {
   height: 32.66%;
   width: 20.14%;
-}
+} */
 .frame-div,
 .influencer-card-11 {
   position: absolute;
   overflow: hidden;
+}
+.new-frame,
+.influencer-card-11{
+  position: absolute;
 }
 .rectangle-container {
   top: 26.99%;
